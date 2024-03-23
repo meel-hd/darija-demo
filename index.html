@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darija</title>
+    <link rel="favicon" href="assets/و.png"
+    <link rel="stylesheet" href="./styles/scrollbar.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+</head>
+
+<body>
+	<!-- Toggle buttons -->
+    <button id="floating" onclick="toggleTable()"> 👁️ </button>
+    <button id="floating"  onclick="toggleKeyboard()"> ⌨️ </button>
+    <!-- Main input view -->
+    <div id="view"></div>
+    <!-- Table -->
+    <div class="hidden" id="table">
+        <h3 style="width: 100%; text-align: center;"> Physical Keyboard Mapping</h3>
+    </div>
+    <!-- Keyboard -->
+    <div id="keyboard"> </div>
+    
+    <!-- Scripts -->
+    <script defer src="/scripts/index.js"> </script>
+    <script defer src="/scripts/table.js"></script>
+    <script defer src="/scripts/Keyboard.js"></script>
+</body>
+
+</html>
