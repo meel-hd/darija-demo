@@ -48,9 +48,8 @@ button {
     z-index: 20;
     font-size: larger;
 }
-
-#floating:nth-child(2) {
-    top: 80px;
+#floating:nth-child(2){
+	top: 80px;
 }
 
 button:hover,
@@ -69,7 +68,7 @@ button:active {
     box-shadow: -7px -7px 10px #00000010;
     background-color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
@@ -105,12 +104,13 @@ button:active {
     border-radius: 20px;
     box-shadow: -7px 7px 10px #00000010;
     overflow-y: hidden;
+    background-color: #f3f3f3;
 }
 
-#clickable-letter {
+#keyboard #clickable-letter {
     width: 40px;
-    height: 50px;
-    background-color: #d6d6d6;
+    height: 45px;
+    background-color: #d3d3d3;
     position: relative;
     border-radius: 10px;
     display: flex;
@@ -120,6 +120,7 @@ button:active {
 }
 #clickable-letter img {
     width: 30px;
+    height: 28px;
 }
 #clickable-letter:hover {
     transform: none;
@@ -135,13 +136,10 @@ button:active {
 }
 
 @media only screen and (max-width: 600px) {
-    #floating:nth-child(1) {
+    #floating {
         display: none;
     }
 
-    #floating:nth-child(2) {
-        top: 5px;
-    }
     #keyboard {
         bottom: 0px;
         right: 0px;
@@ -150,13 +148,16 @@ button:active {
         width: 95vw;
         height: 290px;
         padding: 10px;
-        flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
         overflow-y: hidden;
+        padding-bottom: 20px;
+    }
+    #keyboard #clickable-letter{
+    	margin-bottom: -10px;
     }
     #view {
-        padding-top: 40px;
+        padding-top: 10px;
         max-height: calc(100vh - 300px); /* Minus keyboard height: ;*/
     }
 }
