@@ -2,7 +2,7 @@
  * Contains functionality of the custom keyboard
  */
 const keyboard = document.getElementById('keyboard');
-const alphabetList = ['أ', 'ب', 'ب (p)', 'ت', 'ث', 'ج', 'ح', 'خ', 'د', 'ذ', 'ر', 'ز', 'س', 'ش', 'ص', 'ض', 'ط', 'ظ', 'ع', 'غ', 'ف', 'ق', 'ف (v)', 'ك', 'ك (g)', 'ل', 'م', 'ن', 'ه', 'و', 'ي']
+const alphabetList = ['أ', 'إ', 'ؤ', 'ب', 'ب (p)', 'ت', 'ث', 'ج', 'ح', 'خ', 'د', 'ذ', 'ر', 'ز', 'س', 'ش', 'ص', 'ض', 'ط', 'ظ', 'ع', 'غ', 'ف', 'ق', 'ف (v)', 'ك', 'ك (g)', 'ل', 'م', 'ن', 'ه', 'و', 'ي', 'أأ', 'إإ', 'ؤؤ']
 
 // Build the keyboard and show it
 for(const item in alphabetList){
