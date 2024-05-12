@@ -57,6 +57,7 @@ addEventListener('keydown', event => {
 	} else
 		// Space
 	if (event.keyCode == 32) {
+		event.preventDefault()
 		space()
 	} else
 		// Backspace
