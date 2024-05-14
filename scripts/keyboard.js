@@ -2,12 +2,12 @@
  * Contains functionality of the custom keyboard
  */
 const keyboard = document.getElementById('keyboard');
-const alphabetList = ['أ', 'إ', 'ؤ', 'ب', 'ب (p)', 'ت', 'ث', 'ج', 'ح', 'خ', 'د', 'ذ', 'ر', 'ز', 'س', 'ش', 'ص', 'ض', 'ط', 'ظ', 'ع', 'غ', 'ف', 'ق', 'ف (v)', 'ك', 'ك (g)', 'ل', 'م', 'ن', 'ه', 'و', 'ي', 'أأ', 'إإ', 'ؤؤ']
+const alphabetList = ["A", "I", "O", "Aa", "Ii", "Oo", "B", "P", "T", "ث", "ج", "ح", "خ", "D", "ذ", "R", "Z", "S", "ش", "ص", "ض", "ط", "ظ", "ع", "غ", "F", "ق", "V", "K", "G", "L", "M", "N", "ه", "و", "Y"]
 
 // Build the keyboard and show it
 for(const item in alphabetList){
     const letterAsset= `<img src="assets/${alphabetList[item]}.png"</img>`;
-    const letterLabel = `<small style="position: absolute; right: 4px; bottom: 2px;">${alphabetList[item]}</small>`
+    const letterLabel = `<small style="position: absolute; right: 4px; bottom: 2px;">${alphabetList[item].toLowerCase()}</small>`
     const btn = `<button onclick="add(${item})" id="clickable-letter"> ${letterAsset} ${letterLabel}</button>`
     keyboard.innerHTML += btn;
 }

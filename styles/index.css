@@ -65,7 +65,7 @@ button:active {
     box-shadow: -7px -7px 10px #00000010;
     background-color: white;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
@@ -91,7 +91,6 @@ button:active {
 }
 
 #keyboard {
-    flex-direction: row;
     bottom: 20px;
     right: 20px;
     top: auto;
@@ -115,6 +114,7 @@ button:active {
     justify-content: center;
     align-items: center;
     box-shadow: none;
+    cursor: pointer;
 }
 #keyboard #clickable-letter:active {
     transform: scale(1.1);
